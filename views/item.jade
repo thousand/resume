@@ -1,0 +1,13 @@
+mixin item( name, role, dates, responsibilities)
+  .item
+    hgroup
+      h3= name
+      h4= role
+        != ' &mdash; '
+        em= dates
+    p= responsibilities
+
+
+
+
+

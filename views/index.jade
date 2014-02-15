@@ -1,5 +1,11 @@
+include item
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  h1= name
+
+  section.jobs
+    h2 Work Experience
+    each job in work
+      +item(job.name, job.role, job.dates, job.responsibilities)
+

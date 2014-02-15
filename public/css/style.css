@@ -1,0 +1,43 @@
+body {
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 4em auto;
+  width: 60em;
+  background: #fbfbfb;
+}
+a {
+  color: #1992be;
+}
+h1,
+h2,
+h3,
+h4 {
+  margin-top: 0.75em;
+  margin-bottom: 0.75em;
+  font-weight: 200;
+}
+h1 {
+  font-size: 4.25em;
+  color: #1992be;
+}
+h2 {
+  font-size: 2.625em;
+  font-style: italic;
+  border-bottom: 1px solid;
+}
+h3 {
+  font-size: 1.625em;
+}
+h4 {
+  font-size: 1.44em;
+}
+.item {
+  margin: 4em 0;
+}
+.item hgroup > * {
+  margin: 0;
+}
+.item hgroup em {
+  font-size: 0.9em;
+}
