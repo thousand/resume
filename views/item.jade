@@ -2,9 +2,11 @@ mixin item( name, role, dates, responsibilities)
   .item
     hgroup
       h3= name
-      h4= role
-        != ' &mdash; '
-        em= dates
+      if role
+        h4= role
+          if dates
+            != ' &mdash; '
+            em= dates
     p= responsibilities
 
 
