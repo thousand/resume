@@ -1,11 +1,12 @@
+@import "font-awesome.min.css";
 body {
   font-family: "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  margin: 4em auto;
-  width: 60em;
   background: #fbfbfb;
   color: #333;
+  margin: 0;
+  padding: 0;
 }
 a {
   color: #1992be;
@@ -20,7 +21,6 @@ h4 {
 }
 h1 {
   font-size: 4.25em;
-  color: #1992be;
 }
 h2 {
   font-size: 2.625em;
@@ -33,6 +33,10 @@ h3 {
 h4 {
   font-size: 1.44em;
 }
+#main {
+  margin: 12em auto 4em;
+  width: 60em;
+}
 .item {
   margin: 4em 0;
 }
@@ -41,4 +45,44 @@ h4 {
 }
 .item hgroup em {
   font-size: 0.9em;
+}
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: #1992be;
+  background: #fbfbfb;
+  transition: background 0.15s linear, color 0.15s linear;
+}
+#header h1 {
+  margin: 0.25em;
+  transition: font-size 0.15s linear;
+}
+#header.collapse {
+  background: #1992be;
+  color: #fbfbfb;
+}
+#header.collapse h1 {
+  font-size: 2em;
+}
+footer.tech {
+  text-align: center;
+  font-size: 12px;
+  background: #333;
+  color: #fbfbfb;
+}
+footer.tech ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+footer.tech ul li {
+  padding: 0.5em;
+  display: inline-block;
+}
+footer.tech ul li.verb {
+  display: block;
+  color: #fdfdfd;
 }

@@ -2,10 +2,25 @@ include item
 extends layout
 
 block content
-  h1= name
+  header#header
+    h1= name
 
-  section.jobs
-    h2 Work Experience
-    each job in work
-      +item(job.name, job.role, job.dates, job.responsibilities)
+  main#main
+    section.jobs
+      h2 Work Experience
+      each job in work
+        +item(job.name, job.role, job.dates, job.responsibilities)
 
+
+  footer.tech
+    h2 Tech Used for This Page
+
+    ul
+      li HTML5
+      li CSS3
+      li.verb in
+      li: a(href="http://jade-lang.com") Jade
+      li: a(href="http://learnboost.github.io/stylus/") Stylus
+      li.verb on
+      li: a(href="http://nodejs.org/") node.js
+      li: a(href="http://expressjs.com/") Express
