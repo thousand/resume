@@ -5,6 +5,7 @@
 
 var path = require('path')
   , work = require( path.join( __dirname, '../work.json' ) )
+  , education = require( path.join( __dirname, '../education.json' ) )
 ;
 
 exports.index = function(req, res){
@@ -14,7 +15,9 @@ exports.index = function(req, res){
     {
       title: 'Resume',
       name: 'Bryan Levay',
-      work: work
+      work: work,
+      education: education,
+
     }
   );
 };

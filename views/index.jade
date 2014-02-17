@@ -11,13 +11,23 @@ block content
       each job in work
         +item(job.name, job.role, job.dates, job.responsibilities)
 
+    section.education
+      h2 Education
+      each school in education
+        +item(school.name, school.role, school.dates, school.responsibilities)
+
 
   footer.tech
     h2 Tech Used for This Page
 
     ul
-      li HTML5
-      li CSS3
+      li: i.fa.fa-html5
+      li: i.fa.fa-css3
+      li= "JavaScript with "
+        a(href="http://requirejs.org") require.js
+        = " and "
+        a(href="http://jquery.com") jQuery
+
       li.verb in
       li: a(href="http://jade-lang.com") Jade
       li: a(href="http://learnboost.github.io/stylus/") Stylus

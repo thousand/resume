@@ -31,17 +31,28 @@ h3 {
   font-size: 1.625em;
 }
 h4 {
-  font-size: 1.44em;
+  font-size: 1.33em;
 }
 #main {
   margin: 12em auto 4em;
-  width: 60em;
+  width: 900px;
+}
+@media screen and ( max-width: 900px ) {
+  #main {
+    width: 400px;
+  }
+}
+@media screen and ( max-width: 400px ) {
+  #main {
+    width: 290px;
+  }
 }
 .item {
   margin: 4em 0;
 }
 .item hgroup > * {
   margin: 0;
+  line-height: 1.333;
 }
 .item hgroup em {
   font-size: 0.9em;
@@ -68,6 +79,7 @@ h4 {
   font-size: 2em;
 }
 footer.tech {
+  padding: 1em 0;
   text-align: center;
   font-size: 12px;
   background: #333;
@@ -85,4 +97,10 @@ footer.tech ul li {
 footer.tech ul li.verb {
   display: block;
   color: #fdfdfd;
+}
+footer.tech .fa-html5 {
+  font-size: 1.5em;
+}
+footer.tech .fa-css3 {
+  font-size: 1.2em;
 }
