@@ -9,7 +9,6 @@ var path = require('path')
 ;
 
 exports.index = function(req, res){
-  console.log(work);
   res.render(
     'index',
     {
