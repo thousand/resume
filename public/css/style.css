@@ -34,7 +34,7 @@ h4 {
   font-size: 1.33em;
 }
 #main {
-  margin: 12em auto 4em;
+  margin: 15em auto 4em;
   width: 900px;
 }
 @media screen and (max-width: 900px) {
@@ -67,9 +67,13 @@ h4 {
   background: #fbfbfb;
   transition: background 0.15s linear, color 0.15s linear;
 }
+#header h1,
+#header h2,
+#header h3 {
+  transition: font-size 0.15s linear;
+}
 #header h1 {
   margin: 0.25em;
-  transition: font-size 0.15s linear;
 }
 #header.collapse {
   background: #1992be;
@@ -77,6 +81,9 @@ h4 {
 }
 #header.collapse h1 {
   font-size: 2em;
+}
+#header.collapse .info {
+  font-size: 0;
 }
 footer.tech {
   padding: 1em 0;
@@ -103,4 +110,43 @@ footer.tech .fa-html5 {
 }
 footer.tech .fa-css3 {
   font-size: 1.2em;
+}
+@media print {
+  body {
+    font-size: 12px;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    margin-top: 0.5em;
+  }
+  #header,
+  #header.collapse {
+    position: static;
+    text-align: left;
+    color: #1992be !important;
+    background: #fbfbfb !important;
+  }
+  #header h1,
+  #header.collapse h1 {
+    font-size: 4.2em;
+    margin: 0;
+  }
+  #header .info,
+  #header.collapse .info {
+    font-size: 1.5em;
+  }
+  #main {
+    margin-top: 4em;
+    width: auto;
+  }
+  #main > section,
+  #main .item {
+    page-break-inside: avoid;
+  }
+  #main .examples,
+  footer.tech {
+    display: none;
+  }
 }

@@ -6,14 +6,18 @@
   text-align: center
   color: thatblue
   background: bgcolor
+
+  h1, h2, h3
+    transition: font-size 0.15s linear
   h1
     margin: 0.25em
-    transition: font-size 0.15s linear
 
   &.collapse
     background: thatblue
     color: bgcolor
     h1
       font-size: 2em
+    .info
+      font-size: 0
 
   transition: background 0.15s linear, color 0.15s linear
